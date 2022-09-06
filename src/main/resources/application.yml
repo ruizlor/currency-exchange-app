@@ -1,0 +1,29 @@
+spring:
+  security:
+    user:
+      name: user
+      password: secret
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+  cache:
+    type: redis
+  redis:
+    host: localhost
+    port: 6379
+
+server:
+  port: 8085
+
+currency-exchange-api:
+  rates-endpoint: https://api.exchangerate.host/latest
+  conversion-endpoint: https://api.exchangerate.host/convert
+
+cache:
+    name: currencyCache
+    ttl: 10
+
+
+
+
